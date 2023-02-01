@@ -14,6 +14,7 @@ class PublishedManager(models.Manager):
 
 class Post(models.Model):
     tags=TaggableManager()
+    
     class Status(models.TextChoices):
         DRAFT='DR','draft'
         PUBLISHED='PB','published'
